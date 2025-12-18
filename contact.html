@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | CMR University AI Conference 2025</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+<style>
+    /* Specific styles for the Contact layout */
+    .contact-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .contact-header h2 {
+        color: #003366;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .contact-header p {
+        color: #666;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+    .contact-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        margin-top: 40px;
+    }
+    .contact-info {
+        flex: 1;
+        min-width: 300px;
+    }
+    .contact-info h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+    .contact-info p {
+        margin: 8px 0;
+        color: #444;
+    }
+    .contact-form-side {
+        flex: 1.5;
+        min-width: 300px;
+    }
+    .form-box h3 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 5px;
+    }
+    .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+    .form-group textarea {
+        resize: vertical;
+        height: 150px;
+    }
+    .send-btn {
+        background-color: #ff8800;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.3s;
+        float: right;
+    }
+    .send-btn:hover {
+        background-color: #e67a00;
+    }
+</style>
+</head>
+<body>
+
+<div id="loader"></div>
+
+<header>
+<nav class="navbar">
+<div class="logos">
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<img src="images/cmr-logo.png" alt="CMR University">
+<img src="images/ieee-logo.png" alt="IEEE">
+</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="cfp.html">Call for Papers</a></li>
+<li><a href="dates.html">Important Dates</a></li>
+<li><a href="submission.html">Submission</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="contact-container reveal">
+    <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>We welcome your questions, feedback and suggestions. Feel free to reach out using the form below or via the contact details provided. Our team strives to respond to all enquiries at the earliest possible.</p>
+    </div>
+
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <h3>Contact Details</h3>
+            <p><strong>For any queries contact</strong></p>
+            <p>Email: internationalconference@cmr.edu.in</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+            <br>
+            <p><strong>Address:</strong><br>CMR University, Bengaluru, Karnataka</p>
+        </div>
+
+        <div class="contact-form-side">
+            <div class="form-box">
+                <h3>Send us a Message</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+<p>© 2025 CMR University | IEEE Sponsored Conference</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMR University | AI Conference 2025 - Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <style>
+        /* ===============================
+           REGISTRATION PAGE STYLING
+        ================================ */
+        .reg-container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+
+        /* Actual Table Styling from Template */
+        .fee-card { 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            border-radius: 12px; 
+            padding: 30px; 
+            margin-bottom: 40px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+
+        .fee-card h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #003366;
+        }
+
+        .fee-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px; 
+        }
+
+        .fee-table th { 
+            background: #f8f9fa; 
+            text-align: left; 
+            padding: 15px; 
+            border-bottom: 2px solid #eee; 
+            color: #003366; 
+            font-size: 0.95rem;
+        }
+
+        .fee-table td { 
+            padding: 15px; 
+            border-bottom: 1px solid #eee; 
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        .fee-table tr:hover {
+            background-color: #fcfcfc;
+        }
+
+        .early-bird-cutoff { 
+            color: #666; 
+            font-size: 0.85rem; 
+            margin-bottom: 15px; 
+            display: block; 
+            text-align: center;
+        }
+
+        /* Form Styling */
+        .reg-form-card { 
+            background: #fff; 
+            border: 1px solid #ddd; 
+            border-radius: 12px; 
+            padding: 40px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+
+        .form-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px; 
+            margin-bottom: 20px; 
+        }
+
+        .form-group { 
+            display: flex; 
+            flex-direction: column; 
+            margin-bottom: 15px; 
+        }
+
+        .form-group label { 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: #333; 
+            font-size: 0.9rem;
+        }
+
+        .form-group label span { color: red; }
+
+        .form-group input, .form-group select { 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            font-size: 1rem; 
+        }
+
+        /* Payment Section */
+        .payment-box { 
+            border: 1px solid #e0e0e0; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin: 20px 0; 
+            background: #fcfcfc; 
+            text-align: center; 
+        }
+
+        .qr-placeholder { 
+            width: 150px; 
+            height: 150px; 
+            background: #fff; 
+            margin: 0 auto 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 1px solid #ddd; 
+        }
+
+        .btn-copy { 
+            background: #f0f0f0; 
+            border: 1px solid #ccc; 
+            padding: 8px 15px; 
+            font-size: 0.8rem; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            margin: 0 5px;
+        }
+
+        .btn-submit-reg { 
+            background: #009688; 
+            color: white; 
+            border: none; 
+            padding: 15px 40px; 
+            border-radius: 30px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            width: 100%; 
+            margin-top: 20px; 
+            font-size: 1.1rem; 
+        }
+
+        @media (max-width: 768px) { 
+            .form-grid { grid-template-columns: 1fr; } 
+        }
+    </style>
+</head>
+<body>
+
+<div id="loader"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="logos">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <img src="images/cmr-logo.png" alt="CMR University">
+            <img src="images/ieee-logo.png" alt="IEEE">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cfp.html">Call for Papers</a></li>
+            <li><a href="dates.html">Important Dates</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="reg-container">
+    <section class="page-section reveal">
+        
+        <div class="fee-card">
+            <h3>Registration Fees — IGCAI 2025</h3>
+            <span class="early-bird-cutoff">Early-bird cutoff: <strong>2025-12-02</strong> (auto-applied)</span>
+            
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Indian (INR) - Till 02 Dec</th>
+                        <th>Indian (INR) - 03-10 Dec</th>
+                        <th>International (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Student / Research Scholar</td>
+                        <td>₹1,900</td>
+                        <td>₹2,100</td>
+                        <td>$30</td>
+                    </tr>
+                    <tr>
+                        <td>Academic</td>
+                        <td>₹2,400</td>
+                        <td>₹2,600</td>
+                        <td>$40</td>
+                    </tr>
+                    <tr>
+                        <td>Industry</td>
+                        <td>₹2,600</td>
+                        <td>₹2,900</td>
+                        <td>$45</td>
+                    </tr>
+                    <tr>
+                        <td>Co-Author / Delegate</td>
+                        <td>₹900</td>
+                        <td>-</td>
+                        <td>$40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="reg-form-card">
+            <h3 style="margin-bottom: 25px; color: #003366;">Complete Your Registration</h3>
+            <form action="#">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Full Name <span>*</span></label>
+                        <input type="text" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address <span>*</span></label>
+                        <input type="email" placeholder="Confirmation will be sent here" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number <span>*</span></label>
+                        <input type="tel" placeholder="Include country code" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Organization / Institution <span>*</span></label>
+                        <input type="text" placeholder="e.g., CMR University" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Registration Type <span>*</span></label>
+                        <select id="regType" onchange="updatePrice()" required>
+                            <option value="student">Student / Research Scholar</option>
+                            <option value="academic">Academic</option>
+                            <option value="industry">Industry</option>
+                            <option value="delegate">Co-Author / Delegate</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Nationality <span>*</span></label>
+                        <select id="nationality" onchange="updatePrice()" required>
+                            <option value="indian">Indian</option>
+                            <option value="international">International</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Amount Payable (auto) <span>*</span></label>
+                    <input type="text" id="amountPayable" readonly style="background: #f0f0f0; font-weight: bold; color: #003366;">
+                    <small style="color: #666;">Note: 03-10 Dec fees applied based on current date.</small>
+                </div>
+
+
+                <div class="form-group">
+                    <label>Paper ID <span>*</span></label>
+                    <input type="text" placeholder="Authors: Enter Paper ID | Delegates: 'NA'" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Payment Proof (PDF/PNG/JPG) <span>*</span></label>
+                    <input type="file" required>
+                    <small style="color: #888;">Max 5MB. Upload screenshot or bank receipt.</small>
+                </div>
+
+                <button type="submit" class="btn-submit-reg">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<script>
+    function updatePrice() {
+        const type = document.getElementById('regType').value;
+        const nationality = document.getElementById('nationality').value;
+        const amountField = document.getElementById('amountPayable');
+        
+        // Late Fee Pricing (03-10 Dec) from template
+        const prices = {
+            indian: {
+                student: "₹2,100",
+                academic: "₹2,600",
+                industry: "₹2,900",
+                delegate: "₹900"
+            },
+            international: {
+                student: "$30",
+                academic: "$40",
+                industry: "$45",
+                delegate: "$40"
+            }
+        };
+
+        amountField.value = prices[nationality][type];
+    }
+    window.onload = updatePrice;
+</script>
+
+<footer>
+    <p>© 2025 CMR University | IEEE Sponsored Conference</p>
+</footer>
+
+</body>
+</html>

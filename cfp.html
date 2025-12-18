@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMR University | AI Conference 2025</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+
+<div id="loader"></div>
+
+<header>
+    <nav class="navbar">
+        <div class="logos">
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <img src="images/cmr-logo.png" alt="CMR University">
+            <img src="images/ieee-logo.png" alt="IEEE">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cfp.html">Call for Papers</a></li>
+            <li><a href="dates.html">Important Dates</a></li>
+            <li><a href="submission.html">Submission</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="page-section reveal">
+    <div class="cfp-container">
+        <header class="cfp-header">
+            <h2>Call for Papers</h2>
+            <p class="section-intro">We invite scholars, practitioners, and innovators worldwide to submit original research to the AI Conference 2025. We welcome contributions across computing, artificial intelligence, and allied interdisciplinary domains.</p>
+            
+            <center>
+                <div style="margin: 25px 0; text-align: center;">
+                <a href="submission.html" class="btn-primary-pill">Submit Your Paper</a>
+                <a href="#" class="btn-teal-pill">Download Paper Format / Template</a>
+            </div>
+            </center>
+            <br>
+            <div class="tab-nav">
+                <a href="#topics" class="info-card small">Topics</a>
+                <a href="#dates" class="info-card small">Important Dates</a>
+                <a href="#guidelines" class="info-card small">Submission Guidelines</a>
+                <a href="#review" class="info-card small">Peer Review</a>
+                <a href="#publication" class="info-card small">Publication</a>
+                <a href="#faq" class="info-card small">FAQ</a>
+            </div>
+        </header>
+        <br>
+        <div id="dates" class="info-card small">
+            <h3>Important Dates</h3>
+            <div class="dates-grid">
+                <div class="date-card">
+                    <span>Submission Opens</span>
+                    <strong>1st April 2025</strong>
+                </div>
+                <div class="date-card">
+                    <span>Paper Submission Deadline</span>
+                    <strong>20th November 2025</strong>
+                </div>
+                <div class="date-card">
+                    <span>Notification of Acceptance</span>
+                    <strong>30th November 2025</strong>
+                </div>
+                <div class="date-card">
+                    <span>Conference Dates</span>
+                    <strong>14-15 December 2025</strong>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="topics" class="content-block">
+            <h2>Topics of Interest</h2>
+            <p>The list below indicates key areas ;&nbsp; submissions in allied fields are also welcome.</p>
+            <div class="filter-box">
+                <input type="text" id="topicFilter" onkeyup="filterTopics()" placeholder="Type to filter topics...">
+            </div>
+            <div class="topic-chips" id="topicContainer">
+                <span class="chip">Artificial Intelligence and Machine Learning</span>
+                <span class="chip">Data Science and Big Data Analytics</span>
+                <span class="chip">Robotics and Autonomous Systems</span>
+                <span class="chip">Internet of Things & Smart Cities</span>
+                <span class="chip">Cybersecurity and Blockchain</span>
+                <span class="chip">Quantum Computing</span>
+                <span class="chip">Ethical AI and Governance</span>
+                <span class="chip">Cloud Computing and Edge Computing</span>
+                <span class="chip">Augmented and Virtual Reality</span>
+                <span class="chip">Human-Computer Interaction</span>
+            </div>
+        </div>
+
+        <div id="guidelines" class="info-card">
+            <h3>Submission Guidelines</h3>
+            <ul>
+                <li class="info-card small">✔ Use the official template (LaTeX/Word). Length: 6-10 pages.</li>
+                <li class="info-card small">✔ Write in clear English and include a 150-250 word abstract.</li>
+                <li class="info-card small"><strong>✔ Double-blind review:</strong> Remove author names and affiliations from initial PDF.</li>
+                <li class="info-card small">✔ Plagiarism checks are conducted. Mention AI tools if used.</li>
+            </ul>
+            <br>
+            <div class="card-actions">
+                <a href="#" class="btn-primary-pill btn-sm">Submit Your Paper</a>
+                <a href="#" class="btn-teal-pill btn-sm">Download Template</a>
+            </div>
+        </div>
+
+        <div class="info-card-grid">
+            <div id="review" class="info-card small">
+                <h3>Peer-Review Process</h3>
+                <p class="info-card small"> Rigorous double-blind review by the Technical Program Committee.</p>
+                <ul>
+                    <li class="info-card small">✔ Evaluated by >2 independent reviewers.</li>
+                    <li class="info-card small">✔ Criteria: Originality, clarity, and relevance.</li>
+                </ul>
+            </div>
+            <div id="publication" class="info-card small">
+                <h3>Publication</h3>
+                <p class="info-card small">Accepted papers will be published with ISBN and DOI, and sent for indexing to Google Scholar and IEEE Xplore.</p>
+                <ul>
+                    <li class="info-card small">✔ At least one author must register.</li>
+                    <li class="info-card small">✔ Best Paper awards will be announced.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="faq" class="info-card small">
+            <h3>FAQ</h3>
+            <details class="info-card small">
+                <summary>Can I submit an already published preprint?</summary>
+                <p>✔ Yes, as long as it hasn't been published in a peer-reviewed journal or conference.</p>
+            </details>
+            <details class="info-card small">
+                <summary>Are Industry case studies welcome?</summary>
+                <p>✔ Absolutely, we encourage practical applications and case studies.</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 CMR University | IEEE Sponsored Conference</p>
+</footer>
+
+</body>
+</html>
